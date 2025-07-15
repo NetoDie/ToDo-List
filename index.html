@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToDo List Neon Futurista</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 ToDo List Auxilio TDAH</h1>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="O que você quer fazer hoje?" autocomplete="off" />
+      <button id="addBtn" disabled title="Adicionar tarefa">
+        <span class="material-icons">add_circle</span>
+      </button>
+    </div>
+    <ul id="taskList"></ul>
+
+    <div class="footer">
+      <span id="tasksCount">0 tarefas pendentes</span>
+      <button id="clearCompleted" title="Limpar tarefas concluídas">Limpar concluídas</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
